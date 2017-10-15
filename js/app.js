@@ -1,3 +1,4 @@
+
 /*
  * Create a list that holds all of your cards
  */
@@ -9,6 +10,8 @@ const cards = jQuery('.deck').children('.card');
  *   - loop through each card and create its HTML
  *   - add each card's HTML to the page
  */
+ shuffle(cards);
+ console.log(cards);
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
@@ -24,7 +27,6 @@ function shuffle(array) {
 
     return array;
 }
-
 
 /*
  * set up the event listener for a card. If a card is clicked:
