@@ -1,7 +1,7 @@
 /*
  * Create a list that holds all of your cards
  */
-
+const cards = jQuery('.deck').children('.card');
 
 /*
  * Display the cards on the page
