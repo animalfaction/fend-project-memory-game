@@ -45,7 +45,14 @@ function shuffle(array) {
  */
 
 
+function resetGame() {
+	jQuery('.open').removeClass('open');
+	jQuery('.match').removeClass('match');
+	jQuery('.show').removeClass('show');
+}
+
 // Event listener for restart button
 jQuery('.restart').on("click", function(event) {
+	resetGame();
 	displayCards();
 });
