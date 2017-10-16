@@ -10,8 +10,13 @@ const cards = jQuery('.deck').children('.card');
  *   - loop through each card and create its HTML
  *   - add each card's HTML to the page
  */
- shuffle(cards);
- console.log(cards);
+
+function displayCards() {
+	shuffle(cards);
+	jQuery('.deck').empty().append(cards);
+}
+
+displayCards();
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {
